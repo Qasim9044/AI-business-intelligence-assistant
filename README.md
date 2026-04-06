@@ -55,12 +55,12 @@ Instead of traditional dashboards, this approach focuses on **conversational dat
 Follow the steps below to run the project locally.
 
 ### 1. Clone the repository
-
+```
 git clone <your-repo-link>
 cd AI-business-intelligence-assistant
 
 
-
+```
 ## 2. Set Up Environment Variables
 
 Before running the app, you need to set your API key:
@@ -68,9 +68,11 @@ Before running the app, you need to set your API key:
 1. In the root of the project, create a file named .env
 2. Open .env in a text editor and add your Groq API key like this:
 
+```
 GROQ_API_KEY=your_api_key_here
 
 
+```
 
 > **Important:** Do NOT commit this .env file to GitHub. It contains your secret key.
 
@@ -83,9 +85,10 @@ Once your dependencies are installed and your .env file is set:
 1. Open a terminal in your project folder.
 2. Run the Streamlit app with:
 
+```
 streamlit run app/main.py
 
-
+```
 
 
 
