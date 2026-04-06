@@ -45,5 +45,4 @@ Give a clear, concise insight.
                 messages=[{"role": "user", "content": prompt}]
             )
 
-            answer = response.choices[0].message.content
-            st.write(answer)
+            st.write(response.choices[0].message.content)
