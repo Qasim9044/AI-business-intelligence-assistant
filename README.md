@@ -55,8 +55,9 @@ Instead of traditional dashboards, this approach focuses on **conversational dat
 Follow the steps below to run the project locally.
 
 ### 1. Clone the repository
-``
+
 git clone <your-repo-link>
+
 cd AI-business-intelligence-assistant
 
 ## 2. Set Up Environment Variables
