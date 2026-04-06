@@ -1,17 +1,15 @@
 from dotenv import load_dotenv
 import os
 
-# Load environment variables
 load_dotenv()
 
 import streamlit as st
 import pandas as pd
-from openai import OpenAI
+from groq import Groq
 
-# Initialize OpenAI client
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Initialize Groq client
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-# UI
 st.title("AI Business Intelligence Assistant")
 st.write("Upload a dataset to begin.")
 
@@ -43,7 +41,7 @@ Give a clear, concise insight.
 """
 
             response = client.chat.completions.create(
-                model="gpt-4.1-mini",
+                model="llama3-70b-8192",
                 messages=[{"role": "user", "content": prompt}]
             )
 
