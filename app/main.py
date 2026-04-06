@@ -1,28 +1,19 @@
 from dotenv import load_dotenv
 import os
 
+# Load environment variables
 load_dotenv()
 
-
-
-
 import streamlit as st
 import pandas as pd
-
-st.title("AI Business Intelligence Assistant")
-st.write("Upload a dataset to begin.")
-
-import streamlit as st
-import pandas as pd
-import os
-from dotenv import load_dotenv
 from openai import OpenAI
 
-# Load API key
-load_dotenv()
+# Initialize OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+# UI
 st.title("AI Business Intelligence Assistant")
+st.write("Upload a dataset to begin.")
 
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
 
